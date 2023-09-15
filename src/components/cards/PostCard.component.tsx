@@ -19,8 +19,8 @@ export function PostCard({ post }: Props) {
         </div>
         <div className="px-5 py-1  rounded-md bg-gray-700 flex items-center justify-center gap-2 m-auto">
           <LikeButton liked={post.liked || false} />
-          <SendButton />
-          <CommentButton />
+          <SendButton shared={post.shared || false} />
+          <CommentButton commented={post.commented || false} />
         </div>
       </div>
     </div>

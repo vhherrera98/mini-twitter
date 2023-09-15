@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-export function SendButton() {
-  const [send, setSend] = useState<boolean>(false);
+export function SendButton({ shared }: { shared: boolean }) {
+  const [send, setSend] = useState<boolean>(shared);
 
   return (
     <button type="button" onClick={() => setSend(!send)}>

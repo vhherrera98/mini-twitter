@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-export function CommentButton() {
-  const [comment, serComment] = useState<boolean>(false);
+export function CommentButton({ commented }: { commented: boolean }) {
+  const [comment, serComment] = useState<boolean>(commented);
 
   return (
     <button type="button" onClick={() => serComment(!comment)}>

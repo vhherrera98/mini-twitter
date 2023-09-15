@@ -30,4 +30,6 @@ export interface Post {
   body: string;
   user: User;
   liked?: boolean;
+  commented?: boolean;
+  shared?: boolean;
 }

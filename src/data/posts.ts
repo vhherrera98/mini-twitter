@@ -3,10 +3,10 @@ import { Post } from './interfaces';
 export const posts: Post[] = [
   {
     user: {
-      id: 1,
-      name: 'Leanne Graham',
-      username: 'Bret',
-      email: 'Sincere@april.biz',
+      id: 100,
+      name: 'Victor Herrera',
+      username: 'vhherrera98',
+      email: 'vhherrera98@april.biz',
       address: {
         street: 'Kulas Light',
         suite: 'Apt. 556',
@@ -26,6 +26,9 @@ export const posts: Post[] = [
       },
     },
     id: 1,
+    liked: true,
+    shared: true,
+    commented: true,
     title:
       'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
     body: 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto',
